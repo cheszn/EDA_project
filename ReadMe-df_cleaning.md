@@ -1,10 +1,32 @@
 # EDA Project
+-Project related to the exploratory data analysis of King county property sales data from 2014 to 2015.
+
+# Client detils and requirements:
+
+Client Name: Nicole Johnson 
+Role: Buyer
+Requirements:
+→ Neighborhood Preference: Nicole is looking for a neighborhood that is lively and centrally located within the city. She values the vibrancy and convenience of living in the heart of the city.
+→ Price Range: Nicole is interested in properties that fall within the middle price range. She has a specific budget in mind and is seeking properties that align with her financial preferences.
+→ Timing: Nicole is planning to make a purchase within the next year. It's crucial to find a property that meets her requirements within this timeframe.
+Nicole's requirements are centered around finding a property in a lively and central neighborhood that fits her budget and aligns with her timeline for purchase. These criteria will guide the property search to ensure her needs and preferences are met.
 
 
-## Requirements
+## System Requirements
 
 - pyenv
 - python==3.11.3
+- PostgreSQL:
+      - HOST='your_host'
+      - PORT=your port
+      - DATABASE='postgres'
+      - USER_DB='your_userdb_name'
+      - PASSWORD='your_password'
+
+
+# Below in DB_STRING, replace "USER_DB" and "PASSWORD" with username and password used for Dbeaver setup (given by coaches)
+
+DB_STRING = "postgresql://'your_userdb_name':'your_password'm@ds-sql-playground.c8g8r1deus2v.eu-central-1.rds.amazonaws.com:5432/postgres"
 
 ## Setup
 
@@ -24,27 +46,17 @@ pip freeze > requirements.txt
 
 *Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
 
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
 
 ### Environment
 
 This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
 
-In order to install the environment you can use the following commands:
+In order to install the environment you can use the following commands in Powershell:
 
 ```
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-pip install --upgrade pip
-pip install jupyterlab
-Jupyter -lab
+.venv\Scripts\python.exe -m pip install --upgrade pip
+pip install -r requirements.txt
+Jupyter lab
 '''
