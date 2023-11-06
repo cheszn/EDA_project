@@ -1,7 +1,7 @@
 # EDA Project
 -Project related to the exploratory data analysis of King county property sales data from 2014 to 2015.
 
-# Client detils and requirements:
+## Client detils and requirements:
 
 Client Name: Nicole Johnson 
 Role: Buyer
@@ -24,7 +24,7 @@ Nicole's requirements are centered around finding a property in a lively and cen
       - PASSWORD='your_password'
 
 
-# Below in DB_STRING, replace "USER_DB" and "PASSWORD" with username and password used for Dbeaver setup (given by coaches)
+#### Below in DB_STRING, replace "USER_DB" and "PASSWORD" with username and password used for Dbeaver setup (given by coaches)
 
 DB_STRING = "postgresql://'your_userdb_name':'your_password'm@ds-sql-playground.c8g8r1deus2v.eu-central-1.rds.amazonaws.com:5432/postgres"
 
